@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class FightButton extends Button implements HitButton
+public class FightButton extends Button implements Invoker
 {
     ButtonAction fightButtonAction;
     /**
@@ -21,7 +21,7 @@ public class FightButton extends Button implements HitButton
     {
         fightButtonAction.performButtonAction();
     }
-    public void setAction(ButtonAction action)
+    public void setCommand(ButtonAction action)
     {
         this.fightButtonAction = action;
     }

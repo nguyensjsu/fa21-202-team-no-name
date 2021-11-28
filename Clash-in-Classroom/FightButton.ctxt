@@ -7,5 +7,5 @@ comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ fightButton\ wants\ to\ do.\ This
 comment2.params=
 comment2.target=void\ hitButton()
 comment3.params=action
-comment3.target=void\ setAction(ButtonAction)
+comment3.target=void\ setCommand(ButtonAction)
 numComments=4

@@ -33,7 +33,7 @@ public class MyWorld extends World
     private void prepare()
     {
         addObject(fightButton,459,494);
-        fightButton.setAction(fightAction);
+        fightButton.setCommand(fightAction);
         fightAction.setReceiver(
             new Receiver()
             {
