@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=HitButton
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ HitButton\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=void\ hitButton()
+comment2.params=action
+comment2.target=void\ setAction(ButtonAction)
+numComments=3
