@@ -9,6 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class MyWorld extends World
 {
     private FightButton fightButton;
+    private InstructionsButton instructionButton;
     private FightAction fightAction;
     /**
      * Constructor for objects of class MyWorld.
@@ -22,6 +23,7 @@ public class MyWorld extends World
         bg.scale(getWidth(),getHeight());
         setBackground(bg);
         fightButton = new FightButton();
+        instructionButton = new InstructionsButton();
         fightAction = new FightAction();
         prepare();
     }
@@ -33,6 +35,7 @@ public class MyWorld extends World
     private void prepare()
     {
         addObject(fightButton,457,500);
+        addObject(instructionButton, 85, 671);
         fightButton.setCommand(fightAction);
         fightAction.setReceiver(
             new Receiver()
