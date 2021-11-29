@@ -1,7 +1,7 @@
 /**
  * Write a description of class Receiver here.
  * 
- * @author (your name) 
+ * @author (Harsh Sheth) 
  * @version (a version number or a date)
  */
 public interface Receiver  
