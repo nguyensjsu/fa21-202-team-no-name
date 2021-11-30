@@ -60,7 +60,7 @@ public class MyWorld extends World
                     if(Greenfoot.mouseClicked(instructionButton))
                     {
                         Instructions instruction = instructionButton.fetchInstructions();
-                        addObject(instruction, getWidth()/2, getHeight()/2);
+                        addObject(instruction, getWidth()/2, 450);
                     }
                 }
             }
