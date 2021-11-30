@@ -8,12 +8,16 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class InstructionsButton extends Button implements Invoker
 {
-    ButtonAction instructoinsButtonAction;
+    private ButtonAction instructionsButtonAction;
     private Instructions instructions;
     
     public InstructionsButton()
     {
         instructions = new Instructions();
+    }
+    public Instructions fetchInstructions()
+    {
+        return instructions;
     }
     /**
      * Act - do whatever the InstructionsButton wants to do. This method is called whenever
@@ -25,14 +29,10 @@ public class InstructionsButton extends Button implements Invoker
     }
     public void hitButton()
     {
-        instructoinsButtonAction.performButtonAction();
+        instructionsButtonAction.performButtonAction();
     }
     public void setCommand(ButtonAction action)
     {
-        this.instructoinsButtonAction = action;
-    }
-    public Instructions fetchInstructions()
-    {
-        return instructions;
+        this.instructionsButtonAction = action;
     }
 }

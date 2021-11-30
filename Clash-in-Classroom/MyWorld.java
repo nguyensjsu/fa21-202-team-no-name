@@ -11,6 +11,7 @@ public class MyWorld extends World
     private FightButton fightButton;
     private InstructionsButton instructionButton;
     private FightAction fightAction;
+    private InstructionsAction instructionAction;
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -25,6 +26,7 @@ public class MyWorld extends World
         fightButton = new FightButton();
         instructionButton = new InstructionsButton();
         fightAction = new FightAction();
+        instructionAction = new InstructionsAction();
         prepare();
     }
     
@@ -37,6 +39,7 @@ public class MyWorld extends World
         addObject(fightButton,457,500);
         addObject(instructionButton, 85, 671);
         fightButton.setCommand(fightAction);
+        instructionButton.setCommand(instructionAction);
         fightAction.setReceiver(
             new Receiver()
             {
@@ -45,6 +48,19 @@ public class MyWorld extends World
                     if(Greenfoot.mouseClicked(fightButton))
                     {
                         Greenfoot.setWorld(new GameWorld());
+                    }
+                }
+            }
+        );
+        instructionAction.setReceiver(
+            new Receiver()
+            {
+                public void doAction()
+                {
+                    if(Greenfoot.mouseClicked(instructionButton))
+                    {
+                        Instructions instruction = instructionButton.fetchInstructions();
+                        addObject(instruction, getWidth()/2, getHeight()/2);
                     }
                 }
             }
