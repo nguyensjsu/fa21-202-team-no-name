@@ -11,4 +11,6 @@ comment3.params=
 comment3.target=void\ doAction()
 comment4.params=
 comment4.target=void\ doAction()
-numComments=5
+comment5.params=
+comment5.target=void\ doAction()
+numComments=6

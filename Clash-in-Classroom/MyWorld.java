@@ -13,6 +13,8 @@ public class MyWorld extends World
     private InstructionsButton instructionButton;
     private FightAction fightAction;
     private InstructionsAction instructionAction;
+    private ReturnButton returnButton;
+    private ReturnAction returnAction;
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -29,6 +31,8 @@ public class MyWorld extends World
         instructionButton = new InstructionsButton();
         fightAction = new FightAction();
         instructionAction = new InstructionsAction();
+        returnButton = new ReturnButton();
+        returnAction = new ReturnAction();
         prepare();
     }
     
@@ -64,7 +68,21 @@ public class MyWorld extends World
                         Instructions instruction = instructionButton.fetchInstructions();
                         addObject(instruction, getWidth()/2, 450);
                         addObject(fightButtonInstruction,655,655);
+                        addObject(returnButton, 16, 216);
+                        returnButton.setCommand(returnAction);
                         fightButtonInstruction.setCommand(fightAction);
+                    }
+                }
+            }
+        );
+        returnAction.setReceiver(
+            new Receiver()
+            {
+                public void doAction()
+                {
+                    if(Greenfoot.mouseClicked(returnButton))
+                    {
+                        Greenfoot.setWorld(new MyWorld());
                     }
                 }
             }
