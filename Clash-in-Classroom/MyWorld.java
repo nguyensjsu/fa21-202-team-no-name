@@ -9,6 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class MyWorld extends World
 {
     private FightButton fightButton;
+    private FightButton fightButtonInstruction;
     private InstructionsButton instructionButton;
     private FightAction fightAction;
     private InstructionsAction instructionAction;
@@ -24,6 +25,7 @@ public class MyWorld extends World
         bg.scale(getWidth(),getHeight());
         setBackground(bg);
         fightButton = new FightButton();
+        fightButtonInstruction = new FightButton();
         instructionButton = new InstructionsButton();
         fightAction = new FightAction();
         instructionAction = new InstructionsAction();
@@ -45,7 +47,7 @@ public class MyWorld extends World
             {
                 public void doAction()
                 {
-                    if(Greenfoot.mouseClicked(fightButton))
+                    if(Greenfoot.mouseClicked(fightButton) || Greenfoot.mouseClicked(fightButtonInstruction))
                     {
                         Greenfoot.setWorld(new GameWorld());
                     }
@@ -61,6 +63,8 @@ public class MyWorld extends World
                     {
                         Instructions instruction = instructionButton.fetchInstructions();
                         addObject(instruction, getWidth()/2, 450);
+                        addObject(fightButtonInstruction,655,655);
+                        fightButtonInstruction.setCommand(fightAction);
                     }
                 }
             }
