@@ -15,6 +15,7 @@ public class MyWorld extends World
     private InstructionsAction instructionAction;
     private ReturnButton returnButton;
     private ReturnAction returnAction;
+    private GreenfootSound mainSound;
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -23,9 +24,10 @@ public class MyWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(900, 750, 1,false); 
-        GreenfootImage bg = new GreenfootImage("ClashInClassroom.jpg");
-        bg.scale(getWidth(),getHeight());
-        setBackground(bg);
+        GreenfootImage mainImage = new GreenfootImage("ClashInClassroom.jpg");
+        mainImage.scale(getWidth(),getHeight());
+        setBackground(mainImage);
+        mainSound = new GreenfootSound("bensound-ukulele.mp3");
         fightButton = new FightButton();
         fightButtonInstruction = new FightButton();
         instructionButton = new InstructionsButton();
@@ -34,6 +36,11 @@ public class MyWorld extends World
         returnButton = new ReturnButton();
         returnAction = new ReturnAction();
         prepare();
+    }
+    
+    public void act()
+    {
+        mainSound.playLoop();
     }
     
     /**
@@ -82,6 +89,7 @@ public class MyWorld extends World
                 {
                     if(Greenfoot.mouseClicked(returnButton))
                     {
+                        mainSound.stop();
                         Greenfoot.setWorld(new MyWorld());
                     }
                 }
