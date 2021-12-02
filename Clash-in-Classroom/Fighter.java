@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (Harsh Sheth) 
  * @version (a version number or a date)
  */
-public class Fighter extends Actor
+public class Fighter extends GameActors
 {
     /**
      * Act - do whatever the Fighter wants to do. This method is called whenever
@@ -14,6 +14,15 @@ public class Fighter extends Actor
      */
     public void act()
     {
-        // Add your action code here.
+        if(Greenfoot.isKeyDown("w"))
+        {
+            if(getY() > 200)
+                setLocation(getX(), getY()-3);
+        }
+        if(Greenfoot.isKeyDown("s"))
+        {
+            if(getY() < 550)
+                setLocation(getX(), getY()+3);
+        }
     }
 }
