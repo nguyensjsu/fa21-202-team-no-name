@@ -23,7 +23,7 @@ public class MyWorld extends World
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(900, 750, 1,false); 
+        super(900, 650, 1,false); 
         GreenfootImage mainImage = new GreenfootImage("ClashInClassroom.jpg");
         mainImage.scale(getWidth(),getHeight());
         setBackground(mainImage);
@@ -49,8 +49,8 @@ public class MyWorld extends World
      */
     private void prepare()
     {
-        addObject(fightButton,457,500);
-        addObject(instructionButton, 85, 671);
+        addObject(fightButton,457,435);
+        addObject(instructionButton, 85, 570);
         fightButton.setCommand(fightAction);
         instructionButton.setCommand(instructionAction);
         fightAction.setReceiver(
@@ -73,9 +73,9 @@ public class MyWorld extends World
                     if(Greenfoot.mouseClicked(instructionButton))
                     {
                         Instructions instruction = instructionButton.fetchInstructions();
-                        addObject(instruction, getWidth()/2, 450);
-                        addObject(fightButtonInstruction,655,655);
-                        addObject(returnButton, 16, 216);
+                        addObject(instruction, getWidth()/2, 395);
+                        addObject(fightButtonInstruction,655,595);
+                        addObject(returnButton, 18, 161);
                         returnButton.setCommand(returnAction);
                         fightButtonInstruction.setCommand(fightAction);
                     }
