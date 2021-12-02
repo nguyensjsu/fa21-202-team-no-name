@@ -24,7 +24,7 @@ public class MyWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(900, 650, 1,false); 
-        GreenfootImage mainImage = new GreenfootImage("ClashInClassroom.jpg");
+        GreenfootImage mainImage = new GreenfootImage("ClashInClassroomUpdated.png");
         mainImage.scale(getWidth(),getHeight());
         setBackground(mainImage);
         mainSound = new GreenfootSound("bensound-ukulele.mp3");
