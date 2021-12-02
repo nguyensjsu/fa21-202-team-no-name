@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Opponent extends GameActors
 {
-    public static int dir=0;
+    public static boolean direction=true;
     /**
      * Act - do whatever the Opponent wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -20,29 +20,27 @@ public class Opponent extends GameActors
     
     public void move()
     {
-        if(dir==0)
+        if(direction==true)
         {
            setLocation(getX(),getY()-1);
-           checkwalls();
+           validateMovement();
         }
-        if(dir==1)
+        if(direction==false)
         {
            setLocation(getX(),getY()+1);
-           checkwalls();
+           validateMovement();
         }
     }
     
-    public void checkwalls()
+    public void validateMovement()
    {
        if(getY() == 201)
        {
-           setLocation(getX(),getY()+50);
-           dir=1;                  
+           direction=false;                  
        }
        if(getY() == 549)
        {
-           setLocation(getX(),getY()-50);
-           dir=0;                  
+           direction=true;                  
        }
    }
 }
