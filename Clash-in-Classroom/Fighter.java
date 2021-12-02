@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Fighter extends GameActors
 {
+    private PaperRoll paperRoll;
     /**
      * Act - do whatever the Fighter wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -23,6 +24,10 @@ public class Fighter extends GameActors
         {
             if(getY() < 550)
                 setLocation(getX(), getY()+3);
+        }
+        if(Greenfoot.isKeyDown("enter"))
+        {
+            getWorld().addObject(paperRoll, getX(), getY());
         }
     }
 }

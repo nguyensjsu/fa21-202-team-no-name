@@ -3,7 +3,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class PaperRoll here.
  * 
- * @author (your name) 
+ * @author (Harsh Sheth) 
  * @version (a version number or a date)
  */
 public class PaperRoll extends GameActors
@@ -14,6 +14,6 @@ public class PaperRoll extends GameActors
      */
     public void act()
     {
-        // Add your action code here.
+        move(5);
     }
 }
