@@ -9,7 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Fighter extends GameActors
 {
     private PaperRoll paperRoll;
-    private int paperRollsLeft = 10;
+    private int paperRollsLeft;
     private State paperState;
     private State noPaperState;
     private State status = noPaperState;
@@ -18,6 +18,7 @@ public class Fighter extends GameActors
     {
         paperState = new PaperState(this);
         noPaperState = new NoPaperState(this);
+        paperRollsLeft = ScoreCard.getInstance().getPaperBallsLeft();
     }
     /**
      * Act - do whatever the Fighter wants to do. This method is called whenever
@@ -65,5 +66,6 @@ public class Fighter extends GameActors
     {
         System.out.println("reducing");
         this.paperRollsLeft -= 1;
+        ScoreCard.getInstance().setPaperBalls();
     }
 }

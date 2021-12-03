@@ -22,9 +22,9 @@ public class GameWorld extends World
         GreenfootImage gameImage = new GreenfootImage("classroomBackground.jpg");
         gameImage.scale(getWidth(),getHeight());
         setBackground(gameImage);
-        fighter = new Fighter();
         opponent = new Opponent();
         scd = ScoreCardDisplay.getInstance();
+        fighter = new Fighter();
         prepare();
     }
     

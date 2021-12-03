@@ -19,13 +19,13 @@ public class PaperRoll extends GameActors implements Match
         {
             getWorld().removeObject(this);
             notifyObservers();
-            ScoreCardDisplay.getInstance().updateDisplay();
         }
+        ScoreCardDisplay.getInstance().updateDisplay();
     }
     
     public void notifyObservers()
     {
-        ScoreCard.getInstance().updateScoreCard();
+        ScoreCard.getInstance().updateScore();
     }
     
 }
