@@ -29,5 +29,6 @@ public class PaperState implements State
         World currentWorld = fighter.getWorld();
         PaperRoll paperRoll = new PaperRoll();
         currentWorld.addObject(paperRoll, fighter.getX()+fighter.getImage().getWidth()/2, fighter.getY());
+        fighter.setPaperLeft();
     }
 }

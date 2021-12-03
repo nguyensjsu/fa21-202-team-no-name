@@ -39,7 +39,7 @@ public class Fighter extends GameActors
             if(getY() < 550)
                 setLocation(getX(), getY()+3);
         }
-        if(Greenfoot.isKeyDown("enter"))
+        if(Greenfoot.getKey() == "enter")
         {
             status.throwPaper();
         }
@@ -55,5 +55,10 @@ public class Fighter extends GameActors
     
     public State getPaperState(){
         return this.paperState;
+    }
+    
+    public void setPaperLeft()
+    {
+        paperRollsLeft--;
     }
 }
