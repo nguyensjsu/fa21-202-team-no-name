@@ -16,6 +16,8 @@ public class MyWorld extends World
     private ReturnButton returnButton;
     private ReturnAction returnAction;
     private GreenfootSound mainSound;
+
+
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -24,6 +26,7 @@ public class MyWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(900, 650, 1,false); 
+
         GreenfootImage mainImage = new GreenfootImage("ClashInClassroomUpdated.png");
         mainImage.scale(getWidth(),getHeight());
         setBackground(mainImage);

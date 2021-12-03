@@ -14,12 +14,7 @@ public class PaperRoll extends GameActors implements Match
      */
     public void act()
     {
-        if(ScoreCard.getInstance().getScore() == 500)
-        {
-            GameEnd gameEnd = new GameEnd("Yay! You won!");
-            getWorld().addObject(gameEnd, getWorld().getWidth()/2, getWorld().getHeight()/2);
-            Greenfoot.stop();
-        }
+        checkGameStatus();
         move(5);
         if(isTouching(Opponent.class))
         {
@@ -34,4 +29,9 @@ public class PaperRoll extends GameActors implements Match
         ScoreCard.getInstance().updateScore();
     }
     
+    public void checkGameStatus(){
+        if(ScoreCard.getInstance().getScore() == 500){
+            ((GameWorld)getWorld()).doGameOver();
+        }
+    }
 }
