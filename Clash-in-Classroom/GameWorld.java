@@ -10,7 +10,7 @@ public class GameWorld extends World
 {
     private Fighter fighter;
     private Opponent opponent;
-    private ScoreCardDisplay ballsLeft;
+    private ScoreCardDisplay scd;
     /**
      * Constructor for objects of class GameWorld.
      * 
@@ -24,7 +24,9 @@ public class GameWorld extends World
         setBackground(gameImage);
         fighter = new Fighter();
         opponent = new Opponent();
-        ballsLeft = new ScoreCardDisplay();
+        GreenfootImage paperBallImage = new GreenfootImage("PaperRollSmall.png");
+        paperBallImage.scale(40,40);
+        scd = new ScoreCardDisplay(7,paperBallImage);
         prepare();
     }
     
@@ -32,6 +34,6 @@ public class GameWorld extends World
     {
         addObject(fighter,70,355);
         addObject(opponent,805,355);
-        addObject(ballsLeft, 429, 77);
+        addObject(scd, 429, 77);
     }
 }

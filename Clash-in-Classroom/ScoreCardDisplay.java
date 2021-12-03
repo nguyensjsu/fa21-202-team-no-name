@@ -12,8 +12,11 @@ public class ScoreCardDisplay extends Actor
      * Act - do whatever the ScoreCardDisplay wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    private int score = 0;
+    private static final Color transparent = new Color(0,0,0,0);
+    private int ballsLeft = 0;
+    GreenfootImage background; 
     GreenfootImage text;
+    GreenfootImage mainDisplay;
     public void act()
     {
         // Add your action code here.
@@ -22,8 +25,27 @@ public class ScoreCardDisplay extends Actor
     {
     }
     
-    public ScoreCardDisplay(int points) 
-    {
-        
+    public ScoreCardDisplay(int ballsLeft, GreenfootImage image) 
+    {   
+        //background = getImage();
+        ballsLeft = ballsLeft;
+        display(ballsLeft, image);
     }
+    
+    public void display(int ballsLeft, GreenfootImage image)
+    {
+        background = getImage();
+        mainDisplay = new GreenfootImage(500, 100);
+        text = new GreenfootImage("     = " +  ballsLeft, 24, Color.BLACK, transparent);
+        background.drawImage(image, 15, 20);
+        background.drawImage(text, 40, 20);
+        background.scale(150, 75);
+        setImage(background);
+        mainDisplay.drawImage(background, (mainDisplay.getWidth() - background.getWidth())/2,
+                             (mainDisplay.getHeight() - background.getHeight())/2);
+        setImage(mainDisplay);
+    }
+    
+    
+    
 }
