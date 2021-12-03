@@ -8,7 +8,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class GameActors extends Actor
 {
-    private ScoreCard scoreCard = new ScoreCard();
     /**
      * Act - do whatever the GameActors wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -16,10 +15,5 @@ public class GameActors extends Actor
     public void act()
     {
         // Add your action code here.
-    }
-    
-    public ScoreCard fetchScoreCard()
-    {
-        return scoreCard;
     }
 }
