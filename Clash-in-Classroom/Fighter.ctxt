@@ -2,6 +2,14 @@
 comment0.target=Fighter
 comment0.text=\r\n\ Write\ a\ description\ of\ class\ Fighter\ here.\r\n\ \r\n\ @author\ (Harsh\ Sheth)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=
-comment1.target=void\ act()
-comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ Fighter\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
-numComments=2
+comment1.target=Fighter()
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ Fighter\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment3.params=status
+comment3.target=void\ setStatus(State)
+comment4.params=
+comment4.target=State\ getNoPaperState()
+comment5.params=
+comment5.target=State\ getPaperState()
+numComments=6

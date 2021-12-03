@@ -9,6 +9,20 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Fighter extends GameActors
 {
     private PaperRoll paperRoll;
+    private static int paperRollsLeft = 10;
+    private State paperState;
+    private State noPaperState;
+    private State status = noPaperState;
+    
+    public Fighter()
+    {
+        paperState = new PaperState(this);
+        noPaperState = new NoPaperState(this);
+        if(paperRollsLeft > 0)
+        {
+            status = paperState;
+        }
+    }
     /**
      * Act - do whatever the Fighter wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -27,7 +41,19 @@ public class Fighter extends GameActors
         }
         if(Greenfoot.isKeyDown("enter"))
         {
-            getWorld().addObject(paperRoll, getX(), getY());
+            status.throwPaper();
         }
+    }
+    
+    public void setStatus(State status) {
+        this.status = status;
+    }
+    
+    public State getNoPaperState(){
+        return this.noPaperState;
+    }
+    
+    public State getPaperState(){
+        return this.paperState;
     }
 }

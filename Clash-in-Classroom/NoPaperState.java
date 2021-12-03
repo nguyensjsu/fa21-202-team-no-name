@@ -7,13 +7,14 @@
 public class NoPaperState implements State
 {
     // instance variables - replace the example below with your own
-    private int x;
+    private Fighter fighter;
 
     /**
      * Constructor for objects of class NoPaperState
      */
-    public NoPaperState()
+    public NoPaperState(Fighter fighter)
     {
+        this.fighter = fighter;
     }
 
     /**
