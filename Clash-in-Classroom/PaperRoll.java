@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (Harsh Sheth) 
  * @version (a version number or a date)
  */
-public class PaperRoll extends GameActors
+public class PaperRoll extends GameActors implements Match
 {
     /**
      * Act - do whatever the PaperRoll wants to do. This method is called whenever
@@ -18,6 +18,11 @@ public class PaperRoll extends GameActors
         if(isTouching(Opponent.class))
         {
             getWorld().removeObject(this);
+            notifyObservers();
         }
+    }
+    
+    public void notifyObservers(){
+        fetchScoreCard().updateScoreCard(this);
     }
 }

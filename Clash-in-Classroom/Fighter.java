@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (Harsh Sheth) 
  * @version (a version number or a date)
  */
-public class Fighter extends GameActors
+public class Fighter extends GameActors implements Match
 {
     private PaperRoll paperRoll;
     private static int paperRollsLeft = 10;
@@ -60,5 +60,9 @@ public class Fighter extends GameActors
     public void setPaperLeft()
     {
         paperRollsLeft--;
+    }
+    
+    public void notifyObservers(){
+        fetchScoreCard().updateScoreCard(this);
     }
 }
