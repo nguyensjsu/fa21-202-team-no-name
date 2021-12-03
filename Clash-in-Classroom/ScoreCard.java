@@ -54,9 +54,14 @@ public class ScoreCard extends Actor implements Observer
         // Add your action code here.
     }
     
-    public void updateScoreCard()
+    
+    public void updateBallsLeft()
     {
-        ScoreCard.getInstance().setPaperBalls();
+         ScoreCard.getInstance().setPaperBalls();   
+    }
+    
+    public void updateScore()
+    {
         ScoreCard.getInstance().setScore();
     }
 }

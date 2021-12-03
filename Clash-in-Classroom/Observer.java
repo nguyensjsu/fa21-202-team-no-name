@@ -6,5 +6,7 @@
  */
 public interface Observer  
 {
-    public void updateScoreCard();
+    //public void updateScoreCard(String );
+    public void updateBallsLeft();
+    public void updateScore();
 }
