@@ -12,10 +12,10 @@ public class GameWorld extends World
     private Opponent opponent;
     private ScoreCardDisplay scd;
 
-    private GameState st;
-    private GameState og;
-    private GameState pg;
-    private GameState go;
+    private GameState currentState;
+    private GameState ongoingState;
+    private GameState pauseState;
+    private GameState gameoverState;
     /**
      * Constructor for objects of class GameWorld.
      * 
@@ -25,11 +25,11 @@ public class GameWorld extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(900, 650, 1,false);
 
-        og = new OngoingGame(this);
-        pg = new PauseGame(this);
-        go = new GameOver(this);
+        ongoingState = new OngoingGame(this);
+        pauseState = new PauseGame(this);
+        gameoverState = new GameOver(this);
 
-        st = og;
+        currentState = ongoingState;
 
         GreenfootImage gameImage = new GreenfootImage("classroomBackground.jpg");
         gameImage.scale(getWidth(),getHeight());
@@ -49,30 +49,30 @@ public class GameWorld extends World
 
 
     public GameState getState() {
-        return st;
+        return currentState;
     }
     public void setState(GameState state) {
-        this.st = state;
+        this.currentState = state;
     }
     public GameState getOngoingState() {
-        return this.og;
+        return this.ongoingState;
     }
 
     public GameState getPauseState() {
-        return this.pg;
+        return this.pauseState;
     }
 
     public GameState getGameOverState() {
-        return this.go;
+        return this.gameoverState;
     }
 
     public void doOngoingGame() {
-        this.st.doOngoingGame();
+        this.currentState.doOngoingGame();
     }
     public void doPause() {
-        this.st.doPause(); 
+        this.currentState.doPause(); 
     }
     public void doGameOver() {
-        this.st.doGameOver();
+        this.currentState.doGameOver();
      }
 }
