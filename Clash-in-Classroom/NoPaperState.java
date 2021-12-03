@@ -25,6 +25,6 @@ public class NoPaperState implements State
      */
     public void throwPaper()
     {
-    
+        System.out.println("no paper");
     }
 }
