@@ -13,9 +13,9 @@ public class ScoreCardDisplay extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     private static final Color transparent = new Color(0,0,0,0);
-    private int ballsLeft = 0;
     GreenfootImage background; 
     GreenfootImage text;
+    GreenfootImage scoreText;
     GreenfootImage mainDisplay;
     private static ScoreCardDisplay instance;
     public void act()
@@ -41,40 +41,33 @@ public class ScoreCardDisplay extends Actor
     public ScoreCardDisplay(int ballsLeft, GreenfootImage image) 
     {   
         //background = getImage();
-        ballsLeft = ballsLeft;
-        display(ballsLeft, image);
+        background = getImage();
+        display(ScoreCard.getInstance().getPaperBallsLeft(), ScoreCard.getInstance().getScore(), image);
     }
     
-    public void display(int ballsLeft, GreenfootImage image)
+    public void display(int ballsLeft, int score, GreenfootImage image)
     {
         background = getImage();
         //mainDisplay = new GreenfootImage(500, 100);
         text = new GreenfootImage("     = " +  ballsLeft, 24, Color.BLACK, transparent);
+        scoreText = new GreenfootImage("Score   = " +  score, 24, Color.BLACK, transparent);
         background.drawImage(image, 15, 20);
         background.drawImage(text, 40, 20);
+        background.drawImage(scoreText, 20, 70);
         background.scale(150, 75);
         setImage(background);
     }
     
-    public void setBallsLeft(int ballsLeft)
-    {
-        ballsLeft = ballsLeft;
-    }
-    
-    public int getBallsLeft()
-    {
-        return ballsLeft;
-    }
     
     public void updateDisplay()
     {
         //
         background.clear();
+        setImage("BackgroundScoreImage.jpg");
         GreenfootImage paperBallImage = new GreenfootImage("PaperRollSmall.png");
         paperBallImage.scale(40,40);
-        System.out.println(ScoreCard.getInstance().getPaperBallsLeft());
-        ScoreCardDisplay.getInstance().setBallsLeft(ScoreCard.getInstance().getPaperBallsLeft());
-        display(getBallsLeft(), paperBallImage);
+        //ScoreCardDisplay.getInstance().setBallsLeft(ScoreCard.getInstance().getPaperBallsLeft());
+        display(ScoreCard.getInstance().getPaperBallsLeft(), ScoreCard.getInstance().getScore(), paperBallImage);
     }
     
 }
