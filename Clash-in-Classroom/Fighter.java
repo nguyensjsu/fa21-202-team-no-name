@@ -9,7 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Fighter extends GameActors
 {
     private PaperRoll paperRoll;
-    private static int paperRollsLeft = 10;
+    private int paperRollsLeft = 10;
     private State paperState;
     private State noPaperState;
     private State status = noPaperState;
@@ -18,10 +18,6 @@ public class Fighter extends GameActors
     {
         paperState = new PaperState(this);
         noPaperState = new NoPaperState(this);
-        if(paperRollsLeft > 0)
-        {
-            status = paperState;
-        }
     }
     /**
      * Act - do whatever the Fighter wants to do. This method is called whenever
@@ -38,6 +34,14 @@ public class Fighter extends GameActors
         {
             if(getY() < 550)
                 setLocation(getX(), getY()+3);
+        }
+        if(paperRollsLeft > 0)
+        {
+            status = paperState;
+        }
+        else
+        {
+            status = noPaperState;
         }
         if(Greenfoot.getKey() == "enter")
         {
@@ -59,5 +63,7 @@ public class Fighter extends GameActors
     
     public void setPaperLeft()
     {
+        System.out.println("reducing");
+        this.paperRollsLeft -= 1;
     }
 }
