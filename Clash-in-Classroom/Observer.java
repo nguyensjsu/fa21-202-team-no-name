@@ -6,5 +6,5 @@
  */
 public interface Observer  
 {
-    public void updateScoreCard(GameActors subject);
+    public void updateScoreCard();
 }
