@@ -1,0 +1,15 @@
+# filename .gitignore
+
+#ignore *.class
+
+*.class
+
+*.ctxt
+
+*.TXT
+
+*.lock
+
+*.bak
+
+*.DS_Store
