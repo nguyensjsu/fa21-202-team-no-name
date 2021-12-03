@@ -59,6 +59,5 @@ public class Fighter extends GameActors
     
     public void setPaperLeft()
     {
-        paperRollsLeft--;
     }
 }
