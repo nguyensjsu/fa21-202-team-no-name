@@ -24,9 +24,7 @@ public class GameWorld extends World
         setBackground(gameImage);
         fighter = new Fighter();
         opponent = new Opponent();
-        GreenfootImage paperBallImage = new GreenfootImage("PaperRollSmall.png");
-        paperBallImage.scale(40,40);
-        scd = new ScoreCardDisplay(7,paperBallImage);
+        scd = ScoreCardDisplay.getInstance();
         prepare();
     }
     

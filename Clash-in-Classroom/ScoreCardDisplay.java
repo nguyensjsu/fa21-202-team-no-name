@@ -17,10 +17,23 @@ public class ScoreCardDisplay extends Actor
     GreenfootImage background; 
     GreenfootImage text;
     GreenfootImage mainDisplay;
+    private static ScoreCardDisplay instance;
     public void act()
     {
         // Add your action code here.
     }
+    
+    public static ScoreCardDisplay getInstance() {
+        if (instance == null) {
+            GreenfootImage paperBallImage = new GreenfootImage("PaperRollSmall.png");
+            paperBallImage.scale(40,40);
+            instance = new ScoreCardDisplay(7, paperBallImage);
+        }
+        return instance;
+    }
+    
+    
+    
     public ScoreCardDisplay()
     {
     }
