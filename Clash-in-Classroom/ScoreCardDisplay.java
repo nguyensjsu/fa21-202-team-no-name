@@ -27,7 +27,7 @@ public class ScoreCardDisplay extends Actor
         if (instance == null) {
             GreenfootImage paperBallImage = new GreenfootImage("PaperRollSmall.png");
             paperBallImage.scale(40,40);
-            instance = new ScoreCardDisplay(7, paperBallImage);
+            instance = new ScoreCardDisplay(ScoreCard.getInstance().getPaperBallsLeft(), paperBallImage);
         }
         return instance;
     }
@@ -48,17 +48,33 @@ public class ScoreCardDisplay extends Actor
     public void display(int ballsLeft, GreenfootImage image)
     {
         background = getImage();
-        mainDisplay = new GreenfootImage(500, 100);
+        //mainDisplay = new GreenfootImage(500, 100);
         text = new GreenfootImage("     = " +  ballsLeft, 24, Color.BLACK, transparent);
         background.drawImage(image, 15, 20);
         background.drawImage(text, 40, 20);
         background.scale(150, 75);
         setImage(background);
-        mainDisplay.drawImage(background, (mainDisplay.getWidth() - background.getWidth())/2,
-                             (mainDisplay.getHeight() - background.getHeight())/2);
-        setImage(mainDisplay);
     }
     
+    public void setBallsLeft(int ballsLeft)
+    {
+        ballsLeft = ballsLeft;
+    }
     
+    public int getBallsLeft()
+    {
+        return ballsLeft;
+    }
+    
+    public void updateDisplay()
+    {
+        //
+        background.clear();
+        GreenfootImage paperBallImage = new GreenfootImage("PaperRollSmall.png");
+        paperBallImage.scale(40,40);
+        System.out.println(ScoreCard.getInstance().getPaperBallsLeft());
+        ScoreCardDisplay.getInstance().setBallsLeft(ScoreCard.getInstance().getPaperBallsLeft());
+        display(getBallsLeft(), paperBallImage);
+    }
     
 }
