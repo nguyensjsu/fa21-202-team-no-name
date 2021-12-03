@@ -15,5 +15,9 @@ public class PaperRoll extends GameActors
     public void act()
     {
         move(5);
+        if(isTouching(Opponent.class))
+        {
+            getWorld().removeObject(this);
+        }
     }
 }
