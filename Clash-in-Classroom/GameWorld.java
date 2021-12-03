@@ -11,6 +11,11 @@ public class GameWorld extends World
     private Fighter fighter;
     private Opponent opponent;
     private ScoreCardDisplay scd;
+
+    private GameState st;
+    private GameState og;
+    private GameState pg;
+    private GameState go;
     /**
      * Constructor for objects of class GameWorld.
      * 
@@ -19,6 +24,13 @@ public class GameWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(900, 650, 1,false);
+
+        og = new OngoingGame(this);
+        pg = new PauseGame(this);
+        go = new GameOver(this);
+
+        st = og;
+
         GreenfootImage gameImage = new GreenfootImage("classroomBackground.jpg");
         gameImage.scale(getWidth(),getHeight());
         setBackground(gameImage);
@@ -34,4 +46,33 @@ public class GameWorld extends World
         addObject(opponent,805,355);
         addObject(scd, 429, 77);
     }
+
+
+    public GameState getState() {
+        return st;
+    }
+    public void setState(GameState state) {
+        this.st = state;
+    }
+    public GameState getOngoingState() {
+        return this.og;
+    }
+
+    public GameState getPauseState() {
+        return this.pg;
+    }
+
+    public GameState getGameOverState() {
+        return this.go;
+    }
+
+    public void doOngoingGame() {
+        this.st.doOngoingGame();
+    }
+    public void doPause() {
+        this.st.doPause(); 
+    }
+    public void doGameOver() {
+        this.st.doGameOver();
+     }
 }
