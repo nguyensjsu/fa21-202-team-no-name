@@ -9,10 +9,7 @@ public class WinGame extends GameState
     }
     
     @Override
-    public void doWin() {
-        my_world.setState(this);
-        GameEnd gameEnd = new GameEnd("Yay! You won!");
-        my_world.addObject(gameEnd, my_world.getWidth()/2, my_world.getHeight()/2);
-        Greenfoot.stop();
+    public void doOngoingGame() {
+        my_world.setState(my_world.getOngoingState());
     }
 }
