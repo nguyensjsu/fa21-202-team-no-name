@@ -13,3 +13,7 @@
 *.bak
 
 *.DS_Store
+
+*.lock
+
+*.bak
