@@ -1,6 +1,6 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-public class GameOver extends GameState
+public class WinGame extends GameState
 {
        public void act()  {}
     

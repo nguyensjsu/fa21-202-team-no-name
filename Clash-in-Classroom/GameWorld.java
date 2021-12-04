@@ -26,7 +26,7 @@ public class GameWorld extends World {
 
         og = new OngoingGame(this);
         lg = new LoseGame(this);
-        wo = new WinGame(this);
+        wg = new WinGame(this);
 
         st = og;
 
