@@ -17,3 +17,23 @@
 ### Main Screen
 
 ![alt text](https://github.com/nguyensjsu/fa21-202-team-no-name/blob/main/Screenshots%20of%20game/Main%20Screen.png)
+
+### Instructoins Screen
+
+![alt text](https://github.com/nguyensjsu/fa21-202-team-no-name/blob/main/Screenshots%20of%20game/Instructions%20Screen.png)
+
+### Game Screen
+
+![alt text](https://github.com/nguyensjsu/fa21-202-team-no-name/blob/main/Screenshots%20of%20game/Game%20Screen.png)
+
+### Paper Throw Screen
+
+![alt text](https://github.com/nguyensjsu/fa21-202-team-no-name/blob/main/Screenshots%20of%20game/Paper%20throw%20screen.png)
+
+### Win Screen
+
+![alt text](https://github.com/nguyensjsu/fa21-202-team-no-name/blob/main/Screenshots%20of%20game/Win%20Screen.png)
+
+### Lose Screen
+
+![alt text](https://github.com/nguyensjsu/fa21-202-team-no-name/blob/main/Screenshots%20of%20game/Lose%20Screen.png)
