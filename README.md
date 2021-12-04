@@ -60,3 +60,7 @@
 ![alt text](https://github.com/nguyensjsu/fa21-202-team-no-name/blob/main/Screenshots/Kanban%20Board%20mid.png)
 
 ![alt text](https://github.com/nguyensjsu/fa21-202-team-no-name/blob/main/Screenshots/Kanban%20Board%20complete.png)
+
+# Journals
+
+[Harsh Sheth](https://github.com/nguyensjsu/fa21-202-team-no-name/blob/main/Journals/Harsh.md)
