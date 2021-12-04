@@ -1,7 +1,7 @@
 /**
  * Write a description of class HelpAction here.
  * 
- * @author (your name) 
+ * @author (Harsh Sheth) 
  * @version (a version number or a date)
  */
 public class InstructionsAction implements ButtonAction 
