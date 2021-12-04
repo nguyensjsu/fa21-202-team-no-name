@@ -23,9 +23,9 @@ Completed:
 
 Plan to do:
 
-- Installing and familiarizing myself with the Greenfoot tool at it is required to properly appreciate all of its features.
-- I've begun drawing the game's user interface wireframes, which will help me visualize how all of the game's components will look.
-- Now that the technology is in place, it's time to gather game ideas that will help in the selection of the best.
+- Searching for game actors, background images and background sounds.
+- Creating Instructions page for the user to understand the game properly.
+- Setting up game controls on how user will move around and throw paper balls
 
 Blockers:
 
