@@ -4,8 +4,8 @@
 
 ## Team Members
 
-[Harsh Sheth](https://github.com/harsh-sheth7)
-[Chinmay Kamerkar](https://github.com/mercury297)
+[Harsh Sheth](https://github.com/harsh-sheth7)<br>
+[Chinmay Kamerkar](https://github.com/mercury297)<br>
 [Wen-Hao Tseng](https://github.com/Wenhao-Tseng)
 
 ## Approach for the game
