@@ -16,6 +16,7 @@ public class PaperRoll extends GameActors implements Match {
     public void act() {
         move(5);
         checkResult();
+        // the win/lose message is in OngoingGame.java
         if (isTouching(Opponent.class)) {
             getWorld().removeObject(this);
             notifyObservers();
@@ -28,10 +29,11 @@ public class PaperRoll extends GameActors implements Match {
     }
 
     public void checkResult(){
+        // win
         if(ScoreCard.getInstance().getScore() == 500){
             ((GameWorld)getWorld()).doWin();
         }
-
+        // lose
         if (this.getX() > 900) {
             if (ScoreCard.getInstance().getPaperBallsLeft() == 0) {
                 if (ScoreCard.getInstance().getScore() < 500) {
