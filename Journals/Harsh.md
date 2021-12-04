@@ -29,7 +29,7 @@ Plan to do:
 
 Blockers:
 
-- None
+- Solve Overlapping game sound.
 
 ## Week 3
 
@@ -37,6 +37,7 @@ Completed:
 
 - Finalized the game actors, game background and game sounds
 - Fixed the initial game controls
+- Fixed the game overlapping sound on main screen.
 
 Plan to do:
 
