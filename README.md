@@ -45,6 +45,16 @@
 
 ![alt text](https://github.com/nguyensjsu/fa21-202-team-no-name/blob/main/Screenshots/Lose%20Screen.png)
 
+## Design Patterns
+
+| Name             | Design Pattern |
+| :--------------- | :------------- |
+| Harsh Sheth      | Command        |
+| Harsh Sheth      | State          |
+| Chinmay Kamerkar | Singleton      |
+| Chinmay Kamerkar | Observer       |
+| Wen Hao Tseng    | State          |
+
 ### Important Links
 
 - [User Story Ad](https://youtu.be/C439PqK_hs8)
