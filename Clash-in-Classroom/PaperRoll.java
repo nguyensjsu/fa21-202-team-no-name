@@ -15,23 +15,21 @@ public class PaperRoll extends GameActors implements Match {
      */
     public void act() {
         if (ScoreCard.getInstance().getScore() == 500) {
-            GameEnd gameEnd = new GameEnd("Yay! You won!");
+            GameEnd gameEnd = new GameEnd("Hurray! You won with a score of 500!");
             getWorld().addObject(gameEnd, getWorld().getWidth() / 2, getWorld().getHeight() / 2);
             Greenfoot.stop();
         }
         move(5);
         if (this.getX() > 900) {
-            System.out.println("out");
             if (ScoreCard.getInstance().getPaperBallsLeft() == 0) {
                 if (ScoreCard.getInstance().getScore() < 500) {
-                    GameEnd gameEnd = new GameEnd("Yay! You lose!");
+                    GameEnd gameEnd = new GameEnd("Sorry! You are out of GUMBALLS... Oops... Paper Balls!");
                     getWorld().addObject(gameEnd, getWorld().getWidth() / 2, getWorld().getHeight() / 2);
                     Greenfoot.stop();
                 }
             }
         }
         if (isTouching(Opponent.class)) {
-            System.out.println("destroy");
             getWorld().removeObject(this);
             notifyObservers();
         }
