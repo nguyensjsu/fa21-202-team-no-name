@@ -44,6 +44,7 @@ Plan to do:
 - Create Instructions page and add return and fight button code setup.
 - Create Initial game screen and set up all the actors at their place and perform the movements of actors and how the player will throw the ball in the bucket.
 - Imply State pattern in order to check if user still has paper to throw or not. If Yes, then only the fighter is allowed to throw the Paper else the state should be set to noPaperState.
+- Review and merge any peer commits and apply code changes accordingly.
 
 Blockers:
 
@@ -57,6 +58,7 @@ Completed:
 - Created the main screen, added and adjusted the background, added game sound, added command pattern for the buttons on the screen
 - Created and added Insturctions image and created 2 buttons on the page to return back to main screen and to start the game using the same command pattern implementation.
 - Positioned all the actors and other components used to play the game including the fighter, opponent with bucket, and the throw of paper. Added their movement within the game and implemented the game logic.
+- Successfully review and fixed code wherever required after peer merge.
 
 Plan to do:
 
