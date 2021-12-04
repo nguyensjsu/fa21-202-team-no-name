@@ -17,7 +17,6 @@ public class Fighter extends GameActors {
     public Fighter() {
         paperState = new PaperState(this);
         noPaperState = new NoPaperState(this);
-        paperRollsLeft = ScoreCard.getInstance().getPaperBallsLeft();
         delay = new Delay();
     }
 
@@ -26,6 +25,7 @@ public class Fighter extends GameActors {
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() {
+        paperRollsLeft = ScoreCard.getInstance().getPaperBallsLeft();
         if (Greenfoot.isKeyDown("w")) {
             if (getY() > 200)
                 setLocation(getX(), getY() - 3);
@@ -34,7 +34,7 @@ public class Fighter extends GameActors {
             if (getY() < 550)
                 setLocation(getX(), getY() + 3);
         }
-        if (paperRollsLeft > 0) {
+        if (paperRollsLeft > 1) {
             status = paperState;
         } else {
             status = noPaperState;

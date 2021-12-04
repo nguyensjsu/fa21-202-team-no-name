@@ -27,14 +27,13 @@ public class PaperRoll extends GameActors implements Match {
             System.out.println("out");
             if (ScoreCard.getInstance().getPaperBallsLeft() == 0) {
                 if (ScoreCard.getInstance().getScore() < 500) {
-                    GameEnd gameEnd = new GameEnd("Yay! You lose!");
+                    GameEnd gameEnd = new GameEnd("Sorry! You are out of GUMBALLS... Oops... Paper Balls!");
                     getWorld().addObject(gameEnd, getWorld().getWidth() / 2, getWorld().getHeight() / 2);
                     Greenfoot.stop();
                 }
             }
         }*/
         if (isTouching(Opponent.class)) {
-            System.out.println("destroy");
             getWorld().removeObject(this);
             notifyObservers();
         }

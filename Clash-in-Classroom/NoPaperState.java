@@ -25,6 +25,7 @@ public class NoPaperState implements State
      */
     public void throwPaper()
     {
+        fighter.setPaperLeft();
         System.out.println("no paper");
     }
 }
