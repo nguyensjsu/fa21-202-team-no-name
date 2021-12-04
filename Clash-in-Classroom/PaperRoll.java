@@ -19,9 +19,10 @@ public class PaperRoll extends GameActors implements Match {
             getWorld().addObject(gameEnd, getWorld().getWidth() / 2, getWorld().getHeight() / 2);
             Greenfoot.stop();
         }*/
-        checkWin();
+        //checkWin();
         move(5);
-        checkLose();
+        //checkLose();
+        checkResult();
         /*if (this.getX() > 900) {
             System.out.println("out");
             if (ScoreCard.getInstance().getPaperBallsLeft() == 0) {
@@ -44,7 +45,22 @@ public class PaperRoll extends GameActors implements Match {
         ScoreCard.getInstance().updateScore();
     }
 
-    public void checkWin(){
+    public void checkResult(){
+        if(ScoreCard.getInstance().getScore() == 500){
+            ((GameWorld)getWorld()).doWin();
+        }
+
+        if (this.getX() > 900) {
+            System.out.println("out");
+            if (ScoreCard.getInstance().getPaperBallsLeft() == 0) {
+                if (ScoreCard.getInstance().getScore() < 500) {
+                    ((GameWorld)getWorld()).doLose();
+                }
+            }
+        }
+    }
+
+    /*public void checkWin(){
         if(ScoreCard.getInstance().getScore() == 500){
             ((GameWorld)getWorld()).doWin();
         }
@@ -59,7 +75,7 @@ public class PaperRoll extends GameActors implements Match {
                 }
             }
         }
-    }
+    }*/
 
 
 }
