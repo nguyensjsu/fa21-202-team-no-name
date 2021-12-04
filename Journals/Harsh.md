@@ -35,13 +35,15 @@ Blockers:
 
 Completed:
 
-- Planned to create a Java-based game for the Greenfoot software. The idea is to produce a game called "Clash In Classroom," and the team is now assessing which components the game will need to include.
+- Finalized the game actors, game background and game sounds
+- Fixed the initial game controls
 
 Plan to do:
 
-- Installing and familiarizing myself with the Greenfoot tool at it is required to properly appreciate all of its features.
-- I've begun drawing the game's user interface wireframes, which will help me visualize how all of the game's components will look.
-- Now that the technology is in place, it's time to gather game ideas that will help in the selection of the best.
+- Start to implement the Main Screen for the game and use Command Pattern for multiple buttons(fight and instructions).
+- Create Instructions page and add return and fight button code setup.
+- Create Initial game screen and set up all the actors at their place and perform the movements of actors and how the player will throw the ball in the bucket.
+- Imply State pattern in order to check if user still has paper to throw or not. If Yes, then only the fighter is allowed to throw the Paper else the state should be set to noPaperState.
 
 Blockers:
 
