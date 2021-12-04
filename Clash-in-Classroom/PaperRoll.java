@@ -14,13 +14,15 @@ public class PaperRoll extends GameActors implements Match {
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() {
-        if (ScoreCard.getInstance().getScore() == 500) {
+        /*if (ScoreCard.getInstance().getScore() == 500) {
             GameEnd gameEnd = new GameEnd("Yay! You won!");
             getWorld().addObject(gameEnd, getWorld().getWidth() / 2, getWorld().getHeight() / 2);
             Greenfoot.stop();
-        }
+        }*/
+        checkWin();
         move(5);
-        if (this.getX() > 900) {
+        checkLose();
+        /*if (this.getX() > 900) {
             System.out.println("out");
             if (ScoreCard.getInstance().getPaperBallsLeft() == 0) {
                 if (ScoreCard.getInstance().getScore() < 500) {
@@ -29,7 +31,7 @@ public class PaperRoll extends GameActors implements Match {
                     Greenfoot.stop();
                 }
             }
-        }
+        }*/
         if (isTouching(Opponent.class)) {
             System.out.println("destroy");
             getWorld().removeObject(this);
@@ -41,5 +43,23 @@ public class PaperRoll extends GameActors implements Match {
     public void notifyObservers() {
         ScoreCard.getInstance().updateScore();
     }
+
+    public void checkWin(){
+        if(ScoreCard.getInstance().getScore() == 500){
+            ((GameWorld)getWorld()).doWin();
+        }
+    }
+
+    public void checkLose(){
+        if (this.getX() > 900) {
+            System.out.println("out");
+            if (ScoreCard.getInstance().getPaperBallsLeft() == 0) {
+                if (ScoreCard.getInstance().getScore() < 500) {
+                    ((GameWorld)getWorld()).doLose();
+                }
+            }
+        }
+    }
+
 
 }
