@@ -48,7 +48,7 @@
 ### Important Links
 
 - [User Story Ad](https://youtu.be/C439PqK_hs8)
-- [Demo Video]
+- [Demo Video](https://youtu.be/s4BULVYJZeI)
 - [Sprint video]
 
 # Class Diagram
