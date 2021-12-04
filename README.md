@@ -45,6 +45,13 @@
 
 ![alt text](https://github.com/nguyensjsu/fa21-202-team-no-name/blob/main/Screenshots%20of%20game/Lose%20Screen.png)
 
+### Important Links
+- [User Story Ad](https://youtu.be/C439PqK_hs8)
+- [Demo Video]
+- [Sprint video]
 # Class Diagram
 
 ![alt text](https://github.com/nguyensjsu/fa21-202-team-no-name/blob/main/Diagrams/Class%20Diagram.png)
+
+
+
