@@ -11,3 +11,9 @@
 ## Approach for the game
 
 - The game's concept is that there has been a clash in class 202, and one player receives 7 paper balls. The aim is to toss them into a bucket that is eventually moved across by the opponent. To win the game, the player must score 500 points, with each toss into the bucket awarding 100 points.
+
+## Game Design
+
+### Main Screen
+
+![alt text](https://github.com/nguyensjsu/fa21-202-team-no-name/blob/main/Screenshots%20of%20game/Main%20Screen.png)
