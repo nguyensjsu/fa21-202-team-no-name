@@ -51,6 +51,10 @@
 - [Demo Video](https://youtu.be/s4BULVYJZeI)
 - [Sprint video]
 
+# Architecture Diagram
+
+![alt text](https://github.com/nguyensjsu/fa21-202-team-no-name/blob/main/Diagrams/Architecture.png)
+
 # Class Diagram
 
 ![alt text](https://github.com/nguyensjsu/fa21-202-team-no-name/blob/main/Diagrams/Class%20Diagram.png)
