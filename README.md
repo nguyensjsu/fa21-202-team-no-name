@@ -54,3 +54,9 @@
 # Class Diagram
 
 ![alt text](https://github.com/nguyensjsu/fa21-202-team-no-name/blob/main/Diagrams/Class%20Diagram.png)
+
+# Kanban Board
+
+![alt text](https://github.com/nguyensjsu/fa21-202-team-no-name/blob/main/Screenshots/Kanban%20Board%20mid.png)
+
+![alt text](https://github.com/nguyensjsu/fa21-202-team-no-name/blob/main/Screenshots/Kanban%20Board%20complete.png)
