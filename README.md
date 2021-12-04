@@ -69,3 +69,7 @@
 # Journals
 
 [Harsh Sheth](https://github.com/nguyensjsu/fa21-202-team-no-name/blob/main/Journals/Harsh.md)
+
+## Copyright
+
+- Game Background Music(bensound-ukulele) (https://www.bensound.com/)
