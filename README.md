@@ -55,6 +55,14 @@
 | Chinmay Kamerkar | Observer       |
 | Wen Hao Tseng    | State          |
 
+## XP Core Values
+
+| Name             | Design Pattern |
+| :--------------- | :------------- |
+| Harsh Sheth      | Communication  |
+| Harsh Sheth      | Simplicity     |
+| Chinmay Kamerkar | Simplicity     |
+
 ### Important Links
 
 - [User Story Ad](https://youtu.be/C439PqK_hs8)
