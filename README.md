@@ -70,6 +70,11 @@
 | Chinmay Kamerkar | Simplicity     |
 | Chinmay Kamerkar | Feedback       |
 
+# Journals
+
+- [Harsh Sheth](https://github.com/nguyensjsu/fa21-202-team-no-name/blob/main/Journals/Harsh.md)
+- [Chinmay Kamerkar](https://github.com/nguyensjsu/fa21-202-team-no-name/blob/main/Journals/Chinmay.md)
+
 ### Important Links
 
 - [User Story Ad](https://youtu.be/C439PqK_hs8)
@@ -102,11 +107,6 @@
 # Burndown Chart
 
 ![alt text](https://github.com/nguyensjsu/fa21-202-team-no-name/blob/main/Diagrams/Burndown%20Chart.png)
-
-# Journals
-
-- [Harsh Sheth](https://github.com/nguyensjsu/fa21-202-team-no-name/blob/main/Journals/Harsh.md)
-- [Chinmay Kamerkar](https://github.com/nguyensjsu/fa21-202-team-no-name/blob/main/Journals/Chinmay.md)
 
 # Key features Design Summary
 
