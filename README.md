@@ -112,11 +112,13 @@
 
 ## Harsh Sheth
 
+- We had a total of three buttons to handle on the Main Screen and the Instructions screen, so to keep in mind the simplicity factor, included the Command Pattern into the scenario, which allows us to conduct various events while just having to deal with the doActoin() function. There are three interfaces for this purpose: ButtonAction, Invoker, and Receiver. When all three of these are coupled, they determine which instructions should be placed on the instance of the button that is being called.
+- On the Game World screen, we can see that our whole game is operational, including the Fighter, the Opponent, the Score Card, and the Paper Ball that has to be tossed into the bucket. In this scenario, the fighter has seven balls to toss into a bucket, and the score card count is being updated as the fighter tosses the ball. However, the fighter must determine whether or not he has any balls remaining, and for this, the State Pattern is introduced. As a result, if the fighter still has paper in his or her hands, the throw paper should be implemented, which is being handled by the PaperState. If, on the other hand, the fighter has run out of Paper Balls, the current state will be set to noPaperState, and if the throw paper command is sent while the fighter is in noPaperState, no action will be performed.
+
 ## Chinmay Kamerkar
+
 - The Score Card is a class that observes the PaperRoll class. Whenever an object of PaperRoll touches an object of Opponent, PaperRoll notifies it's observer that is the Score Card class. This is how the Score Card gets updated for score. The count of paper rolls left for the fighter to throw, however, is updated whenever a paperRoll is thrown in the PaperState. Now this ScoreCard has to be singleton so that everytime only one object of ScoreCard class exists in run time. Now this ScoreCard provides the information for the ScoreCardDisplay class that is the actor that is actually displayed on the game screen(GameWorld)
 - Now the game ends in two cases: 1) A user scores 500 points or 2) A user is out of paper balls and has not reached 500 points. To ensure this was full proof, the design was made such that there are N + 1 (8 here) paper rolls in the inventory and while displaying we always display 1 ball lesser. So when the fighter reaches NoPaperState on the 7th or Nth ball, the fighter can not throw the 8th ball and thus we have achieved losing condition. The winning condition is simpler, as the boundary case is already taken care of because of the losing scenario.
-
-
 
 # Copyright
 
