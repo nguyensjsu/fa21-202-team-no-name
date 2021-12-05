@@ -105,6 +105,6 @@
 
 ## Chinmay Kamerkar
 
-## Copyright
+# Copyright
 
 - Game Background Music(bensound-ukulele) (https://www.bensound.com/)
