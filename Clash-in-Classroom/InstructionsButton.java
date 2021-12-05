@@ -11,14 +11,24 @@ public class InstructionsButton extends Button implements Invoker
     private ButtonAction instructionsButtonAction;
     private Instructions instructions;
     
+    /**
+     * Constructor to set new instance of Instructions actor.
+     * 
+     */
     public InstructionsButton()
     {
         instructions = new Instructions();
     }
+    
+    /**
+     * Fetch the instructions
+     * @return Instructions
+     */
     public Instructions fetchInstructions()
     {
         return instructions;
     }
+    
     /**
      * Act - do whatever the InstructionsButton wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
