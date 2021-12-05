@@ -31,7 +31,7 @@
 
 ![alt text](https://github.com/nguyensjsu/fa21-202-team-no-name/blob/main/Screenshots/Main%20Screen.png)
 
-### Instructoins Screen
+### Instructions Screen
 
 ![alt text](https://github.com/nguyensjsu/fa21-202-team-no-name/blob/main/Screenshots/Instructions%20Screen.png)
 
@@ -84,6 +84,10 @@
 # Class Diagram
 
 ![alt text](https://github.com/nguyensjsu/fa21-202-team-no-name/blob/main/Diagrams/Class%20Diagram.png)
+
+# Deployment Diagram 
+
+![alt text](https://github.com/nguyensjsu/fa21-202-team-no-name/blob/main/Diagrams/Deployment.png)
 
 # Kanban Board
 
