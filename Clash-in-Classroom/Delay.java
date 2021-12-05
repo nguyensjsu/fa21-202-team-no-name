@@ -8,6 +8,9 @@ public class Delay
 {
     private long lastshot = System.currentTimeMillis();
     
+    /**
+    * Sets the current milliseconds for current paperRoll instance
+    */
     public void shot()
     {
         lastshot = System.currentTimeMillis();

@@ -13,7 +13,11 @@ public class Fighter extends GameActors {
     private State noPaperState;
     private State status = noPaperState;
     private Delay delay;
-
+    
+    /**
+     * Constructor to set new instance for state of paper.
+     * Also to set new instance to set delay
+     */
     public Fighter() {
         paperState = new PaperState(this);
         noPaperState = new NoPaperState(this);
@@ -47,18 +51,32 @@ public class Fighter extends GameActors {
         }
     }
 
+    /**
+    * Sets the current state of paper
+    */
     public void setStatus(State status) {
         this.status = status;
     }
 
+    /**
+    * Return the state of no paper
+    * @return State
+    */    
     public State getNoPaperState() {
         return this.noPaperState;
     }
 
+    /**
+    * Return the state of paper
+    * @return State
+    */   
     public State getPaperState() {
         return this.paperState;
     }
 
+    /**
+    * Set the count of Paper Left
+    */   
     public void setPaperLeft() {
         ScoreCard.getInstance().setPaperBalls();
     }

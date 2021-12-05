@@ -19,10 +19,8 @@ public class PaperState implements State
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
+     * Creates new instance for paperRoll and initiate a throw from fighter
+     * Also set count for paperLeft after throw
      */
     public void throwPaper()
     {

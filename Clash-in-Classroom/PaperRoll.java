@@ -24,10 +24,16 @@ public class PaperRoll extends GameActors implements Match {
         ScoreCardDisplay.getInstance().updateDisplay();
     }
 
+    /**
+    * Notifies the Observer to update the score when it's a ball in bucket
+    */
     public void notifyObservers() {
         ScoreCard.getInstance().updateScore();
     }
 
+    /**
+    * Checks the score and sets win/lose state
+    */
     public void checkResult(){
         // win
         if(ScoreCard.getInstance().getScore() == 500){

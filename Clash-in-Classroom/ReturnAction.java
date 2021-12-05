@@ -8,10 +8,18 @@ public class ReturnAction implements ButtonAction
 {
     Receiver returnReceiver;
     
+    /**
+    * Sets the incoming receiver for returnReceiver
+    */
     public void setReceiver(Receiver receiver)
     {
         this.returnReceiver = receiver;
     }
+    
+    /**
+    * Perform action bounded to returnButton
+    * Calls doAction
+    */
     public void performButtonAction()
     {
         returnReceiver.doAction();
