@@ -1,6 +1,5 @@
 /**
- * Write a description of class Observer here.
- * 
+ * Interface that has methods that will help the class update it's ballsLeft and score
  * @author (Chinmay Kamerkar) 
  * @version (a version number or a date)
  */

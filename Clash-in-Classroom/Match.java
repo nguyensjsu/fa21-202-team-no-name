@@ -1,6 +1,5 @@
 /**
- * Write a description of class Match here.
- * 
+ * Interface that has method to notify it's Observers
  * @author (Chinmay Kamerkar) 
  * @version (a version number or a date)
  */
