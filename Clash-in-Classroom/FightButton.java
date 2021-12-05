@@ -17,10 +17,20 @@ public class FightButton extends Button implements Invoker
     {
         super.act();
     }
+    
+    /**
+     * Used to inform the click of fightButton 
+     * perform whatever action needs to be executed
+     */
     public void hitButton()
     {
         fightButtonAction.performButtonAction();
     }
+    
+    /**
+     * Used to set what action needs to be performed on clicking the fightButton button,
+     * passed as a parameter
+     */
     public void setCommand(ButtonAction action)
     {
         this.fightButtonAction = action;

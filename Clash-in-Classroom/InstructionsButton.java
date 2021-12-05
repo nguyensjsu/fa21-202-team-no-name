@@ -27,10 +27,20 @@ public class InstructionsButton extends Button implements Invoker
     {
         super.act();
     }
+    
+    /**
+     * Used to inform the click of instructionsButton 
+     * perform whatever action needs to be executed
+     */
     public void hitButton()
     {
         instructionsButtonAction.performButtonAction();
     }
+    
+    /**
+     * Used to set what action needs to be performed on clicking the instructionsButton button,
+     * passed as a parameter
+     */
     public void setCommand(ButtonAction action)
     {
         this.instructionsButtonAction = action;

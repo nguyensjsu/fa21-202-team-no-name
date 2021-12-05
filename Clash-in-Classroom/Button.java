@@ -16,6 +16,7 @@ public class Button extends Actor
     {
         hitButton();
     }
+
     public void hitButton()
     {
         
