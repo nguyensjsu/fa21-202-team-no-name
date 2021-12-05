@@ -113,6 +113,10 @@
 ## Harsh Sheth
 
 ## Chinmay Kamerkar
+- The Score Card is a class that observes the PaperRoll class. Whenever an object of PaperRoll touches an object of Opponent, PaperRoll notifies it's observer that is the Score Card class. This is how the Score Card gets updated for score. The count of paper rolls left for the fighter to throw, however, is updated whenever a paperRoll is thrown in the PaperState. Now this ScoreCard has to be singleton so that everytime only one object of ScoreCard class exists in run time. Now this ScoreCard provides the information for the ScoreCardDisplay class that is the actor that is actually displayed on the game screen(GameWorld)
+- Now the game ends in two cases: 1) A user scores 500 points or 2) A user is out of paper balls and has not reached 500 points. To ensure this was full proof, the design was made such that there are N + 1 (8 here) paper rolls in the inventory and while displaying we always display 1 ball lesser. So when the fighter reaches NoPaperState on the 7th or Nth ball, the fighter can not throw the 8th ball and thus we have achieved losing condition. The winning condition is simpler, as the boundary case is already taken care of because of the losing scenario.
+
+
 
 # Copyright
 
