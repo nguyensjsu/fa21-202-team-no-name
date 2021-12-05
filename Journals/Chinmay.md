@@ -11,8 +11,10 @@ After deciding the features and the platform it was time for work division. Howe
 
 
 ## Week 3 
-I decided to use the Observer and Singleton patterns to implement the ScoreCard feature. After taking feedback from my teammates on my design, I started working on my feature. The ScoreCard kept a count of number of PaperRolls left that the Fighter can shoot and the Fighter's current score. After discussing with Harsh as he had the paper roll throwing feature, I made the PaperRoll the subject and the ScoreCard an observer of the PaperRoll. 
-
+I decided to use the Observer and Singleton patterns to implement the ScoreCard feature. After taking feedback from my teammates on my design, I started working on my feature. The ScoreCard kept a count of number of PaperRolls left that the Fighter can shoot and the Fighter's current score. After discussing with Harsh as he had the paper roll throwing feature, I made the PaperRoll the subject and the ScoreCard an observer of the PaperRoll. This meant whenever the fighter throwed a paperball and it was PaperState a deduction was made to paperBallsLeft count from scorecard, and if it touched the opponent class then an addition. After setting up this pattern, I worked on ScoreCardDisplay. Any update made to ScoreCard also triggered updates to ScoreCardDisplay so the image of ScoreCardDisplay was updated everytime an update was made. Then I added the GameEnd screen that will display a message at the end of the Game. Game can end either by finishing paper balls or by getting 500 point; i.e, touching the opponent 5 times.
 
 ## Week 4
+This week I finished up working on my feature. I found out that there was no way to determine if a paperball that has not touched the opponent has passed away. So if it was possible to shoot a lot of balls at a time that would display the result even before the balls hit the opponent. So I _communicated_ with Harsh, and we came up with a _simple_ solution: we installed the system with 8 balls instead of 7 and as soon as the fighter tries to shoot the 8th ball we check the score to determine a loss. Now that this major bug was fixed we started working on our demo video and User story Ad. I edited both of these videos. Then I made the architecture diagram, the deployment diagram and added javadoc comments for better readability. I was also maintaining the Kanban board for our project.
+
+In addition to this, I compiled our Stand-Up and Retrospective videos.
 
