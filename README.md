@@ -91,6 +91,7 @@
 # Journals
 
 [Harsh Sheth](https://github.com/nguyensjsu/fa21-202-team-no-name/blob/main/Journals/Harsh.md)
+[Chinmay Kamerkar](https://github.com/nguyensjsu/fa21-202-team-no-name/blob/main/Journals/Chinmay.md)
 
 ## Copyright
 
