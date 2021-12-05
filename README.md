@@ -74,7 +74,7 @@
 
 - [User Story Ad](https://youtu.be/C439PqK_hs8)
 - [Demo Video](https://youtu.be/s4BULVYJZeI)
-- [Sprint video]
+- [Agile Demonstration](https://youtu.be/hs0AzeUElnA)
 - [UI WireFrames](https://github.com/nguyensjsu/fa21-202-team-no-name/tree/main/Diagrams/UI%20Wireframes)
 
 # Architecture Diagram
