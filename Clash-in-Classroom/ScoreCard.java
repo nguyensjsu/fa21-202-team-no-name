@@ -10,12 +10,6 @@ public class ScoreCard extends Actor implements Observer {
     private static int numPaperBalls = 8;
     private static int score = 0;
     private static ScoreCard instance;
-
-    /**
-     * Act - do whatever the ScoreCard wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-
     public static ScoreCard getInstance() {
         if (instance == null) {
             return new ScoreCard();
