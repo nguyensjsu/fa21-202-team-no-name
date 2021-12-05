@@ -82,7 +82,11 @@
 
 ![alt text](https://github.com/nguyensjsu/fa21-202-team-no-name/blob/main/Screenshots/Kanban%20Board%20mid.png)
 
+![alt text](https://github.com/nguyensjsu/fa21-202-team-no-name/blob/main/Screenshots/KanbanChinmay1.png)
+
 ![alt text](https://github.com/nguyensjsu/fa21-202-team-no-name/blob/main/Screenshots/Kanban%20Board%20complete.png)
+
+![alt text](https://github.com/nguyensjsu/fa21-202-team-no-name/blob/main/Screenshots/KanbanChinmay2.png)
 
 # Journals
 
