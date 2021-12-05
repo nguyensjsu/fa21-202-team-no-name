@@ -62,6 +62,7 @@
 | Harsh Sheth      | Communication  |
 | Harsh Sheth      | Simplicity     |
 | Chinmay Kamerkar | Simplicity     |
+| Chinmay Kamerkar | Feedback       |
 
 ### Important Links
 
