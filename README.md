@@ -16,7 +16,7 @@
 
 - Harsh : Main Screen, Instructions, Fighter, Opponent, PaperBall, Class Diagram, Project Initialization
 - Chinmay : ScoreCard, ScoreCard Display, GameEnd Screens, User Story Video, Demo Video, Agile Video
-- Wen Hao: Ongoing, Win/Lose Game States 
+- Wen Hao: Ongoing, Win/Lose Game States
 
 ## Design Patterns Used
 
@@ -85,7 +85,7 @@
 
 ![alt text](https://github.com/nguyensjsu/fa21-202-team-no-name/blob/main/Diagrams/Class%20Diagram.png)
 
-# Deployment Diagram 
+# Deployment Diagram
 
 ![alt text](https://github.com/nguyensjsu/fa21-202-team-no-name/blob/main/Diagrams/Deployment.png)
 
@@ -99,12 +99,17 @@
 
 ![alt text](https://github.com/nguyensjsu/fa21-202-team-no-name/blob/main/Screenshots/KanbanChinmay2.png)
 
+# Burndown Chart
+
+![alt text](https://github.com/nguyensjsu/fa21-202-team-no-name/blob/main/Diagrams/Burndown%20Chart.png)
+
 # Journals
 
 - [Harsh Sheth](https://github.com/nguyensjsu/fa21-202-team-no-name/blob/main/Journals/Harsh.md)
 - [Chinmay Kamerkar](https://github.com/nguyensjsu/fa21-202-team-no-name/blob/main/Journals/Chinmay.md)
 
 # Key features Design Summary
+
 ## Harsh Sheth
 
 ## Chinmay Kamerkar
