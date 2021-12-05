@@ -1,5 +1,8 @@
 import greenfoot.*; 
 
+/**
+ * Interface to perform actions on the world based on the state of the game
+ */
 public interface IGameState
 {
 
