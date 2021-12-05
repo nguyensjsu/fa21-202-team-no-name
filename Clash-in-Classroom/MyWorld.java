@@ -46,12 +46,14 @@ public class MyWorld extends World {
     /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.
+     * It also contains button receiver's to perform actions
      */
     private void prepare() {
         addObject(fightButton, 457, 435);
         addObject(instructionButton, 85, 570);
         fightButton.setCommand(fightAction);
         instructionButton.setCommand(instructionAction);
+        // Fight Button Receiver
         fightAction.setReceiver(
                 new Receiver() {
                     public void doAction() {
@@ -60,6 +62,7 @@ public class MyWorld extends World {
                         }
                     }
                 });
+        // Instructions Button Receiver
         instructionAction.setReceiver(
                 new Receiver() {
                     public void doAction() {
@@ -73,6 +76,7 @@ public class MyWorld extends World {
                         }
                     }
                 });
+        // Return Button Receiver
         returnAction.setReceiver(
                 new Receiver() {
                     public void doAction() {

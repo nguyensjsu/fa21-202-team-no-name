@@ -30,7 +30,6 @@ public class GameWorld extends World {
 
         st = og;
 
-
         GreenfootImage gameImage = new GreenfootImage("classroomBackground.jpg");
         gameImage.scale(getWidth(), getHeight());
         setBackground(gameImage);
@@ -40,27 +39,53 @@ public class GameWorld extends World {
         fighter = new Fighter();
         prepare();
     }
-
+    
+    /**
+     * Prepare the world for the initial start of the game.
+     * That is: create the initial objects and add them to the world.
+     * It contains main actors of the game screen
+     */
     private void prepare() {
         addObject(fighter, 70, 355);
         addObject(opponent, 805, 355);
         addObject(scd, 429, 77);
     }
-
+    
+    /**
+    * Returns the current state of game
+    * @return GameState
+    */
     public GameState getState() {
         return st;
     }
+    
+    /**
+    * Sets the current state of game
+    */
     public void setState(GameState state) {
         this.st = state;
     }
+    
+    /**
+    * Returns the ongoing state of game
+    * @return GameState
+    */
     public GameState getOngoingState() {
         return this.og;
     }
 
+    /**
+    * Returns the Lose state of game
+    * @return GameState
+    */
     public GameState getLoseState() {
         return this.lg;
     }
 
+    /**
+    * Returns the Win state of game
+    * @return GameState
+    */
     public GameState getWinState() {
         return this.wg;
     }
