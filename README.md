@@ -12,6 +12,12 @@
 
 - The game's concept is that there has been a clash in class 202, and one player receives 7 paper balls. The aim is to toss them into a bucket that is eventually moved across by the opponent. To win the game, the player must score 500 points, with each toss into the bucket awarding 100 points.
 
+## Areas of Contribution
+
+- Harsh : Main Screen, Instructions, Fighter, Opponent, PaperBall, Class Diagram, Project Initialization
+- Chinmay : ScoreCard, ScoreCard Display, GameEnd Screens, User Story Video, Demo Video, Agile Video
+- Wen Hao: Ongoing, Win/Lose Game States 
+
 ## Design Patterns Used
 
 - Command
@@ -62,6 +68,7 @@
 | Harsh Sheth      | Communication  |
 | Harsh Sheth      | Simplicity     |
 | Chinmay Kamerkar | Simplicity     |
+| Chinmay Kamerkar | Feedback       |
 
 ### Important Links
 
@@ -82,12 +89,22 @@
 
 ![alt text](https://github.com/nguyensjsu/fa21-202-team-no-name/blob/main/Screenshots/Kanban%20Board%20mid.png)
 
+![alt text](https://github.com/nguyensjsu/fa21-202-team-no-name/blob/main/Screenshots/KanbanChinmay1.png)
+
 ![alt text](https://github.com/nguyensjsu/fa21-202-team-no-name/blob/main/Screenshots/Kanban%20Board%20complete.png)
+
+![alt text](https://github.com/nguyensjsu/fa21-202-team-no-name/blob/main/Screenshots/KanbanChinmay2.png)
 
 # Journals
 
-[Harsh Sheth](https://github.com/nguyensjsu/fa21-202-team-no-name/blob/main/Journals/Harsh.md)
+- [Harsh Sheth](https://github.com/nguyensjsu/fa21-202-team-no-name/blob/main/Journals/Harsh.md)
+- [Chinmay Kamerkar](https://github.com/nguyensjsu/fa21-202-team-no-name/blob/main/Journals/Chinmay.md)
 
-## Copyright
+# Key features Design Summary
+## Harsh Sheth
+
+## Chinmay Kamerkar
+
+# Copyright
 
 - Game Background Music(bensound-ukulele) (https://www.bensound.com/)
