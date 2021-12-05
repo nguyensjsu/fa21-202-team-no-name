@@ -1,5 +1,5 @@
 /**
- * Write a description of class Receiver here.
+ * Interface to recieve and execute the action of the button action recieved
  * 
  * @author (Harsh Sheth) 
  * @version (a version number or a date)
